@@ -128,6 +128,10 @@ const server = http.createServer((req, res) => {
     const content = `
       <p>Get in touch with us! We'd love to hear from you and answer any questions you may have.</p>
       <p>Email: info@example.com<br>Phone: +1 (555) 123-4567<br>Address: 123 Main Street, City, State 12345</p>
+      <h2 style="color: #007bff; margin-top: 30px;">Repository</h2>
+      <p><strong>GitHub Repository:</strong></p>
+      <p style="word-break: break-all;"><code style="background-color: #f0f0f0; padding: 5px; border-radius: 4px;">https://github.com/YOUR-USERNAME/assignment-06-nodejs</code></p>
+      <p><small>Replace YOUR-USERNAME with your actual GitHub username after pushing the repository.</small></p>
     `;
     const navLinks = `
       <a href="/home">Home</a>
