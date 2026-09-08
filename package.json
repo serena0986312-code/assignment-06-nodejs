@@ -1,0 +1,17 @@
+{
+  "name": "assignment-06-nodejs",
+  "version": "1.0.0",
+  "description": "Simple HTTP Server with multiple routes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "http",
+    "server",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC"
+}
