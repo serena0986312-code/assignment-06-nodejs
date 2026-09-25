@@ -1,56 +1,37 @@
-# Assignment 06 - Node.js HTTP Server
+# Express + Multer File Upload Assignment
 
-A simple HTTP server built with Node.js that serves multiple routes with HTML responses.
+This project creates a simple Express.js server that accepts a file upload using `multer` and saves it in the `uploads` folder.
 
-## Features
-
-- HTTP Server running on Port 5000
-- Multiple routes: Home, Blog, About, Contact
-- 404 error handling for invalid routes
-- Responsive HTML pages with navigation
-
-## Routes
-
-- `/` or `/home` - Home Page
-- `/blog` - Blog Page
-- `/about` - About Us Page
-- `/contact` - Contact Page
-- Any other route returns 404 - Page Not Found
-
-## Installation
+## Run locally
 
 ```bash
 npm install
+node server.js
 ```
 
-## Running the Server
+The server runs on:
 
-```bash
-npm start
+```text
+http://localhost:5000
 ```
 
-The server will start on `http://localhost:5000`
+## Upload endpoint
 
-## File Structure
-
-```
-assignment-06-nodejs/
-├── server.js       # Main server file
-├── package.json    # Node.js project configuration
-├── .gitignore      # Git ignore file
-└── README.md       # This file
+```http
+POST /upload
 ```
 
-## Technologies Used
+Use Postman with:
+- Key: `file`
+- Type: `File`
+- Value: any image file
 
-- Node.js
-- HTTP Module
-- HTML/CSS
+Expected success response:
 
-## Author
+```json
+{
+  "message": "File uploaded successfully"
+}
+```
 
-Developer
-
-## License
-
-ISC
+The uploaded file is saved inside the `uploads` directory.
